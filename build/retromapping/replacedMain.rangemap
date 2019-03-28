@@ -1,0 +1,110 @@
+Symbol range map extraction starting
+Processing 2 files
+startProcessing "ru\frostdelta\svrum\Core.java" md5: 3d03f41f9975c96b3bd5b96ae800fa8e
+@|ru\frostdelta\svrum\Core.java|8|27|ru.frostdelta.svrum|package|ru.frostdelta.svrum|(file)
+Class Start: ru.frostdelta.svrum.Core
+   @|ru\frostdelta\svrum\Core.java|294|298|Core|class|ru.frostdelta.svrum.Core
+   Method Start: core(Ljava/lang/String;Ljava/lang/String;)V
+      @|ru\frostdelta\svrum\Core.java|357|365|username|param|ru.frostdelta.svrum.Core|core|(Ljava/lang/String;Ljava/lang/String;)V|username|0
+      @|ru\frostdelta\svrum\Core.java|374|384|servername|param|ru.frostdelta.svrum.Core|core|(Ljava/lang/String;Ljava/lang/String;)V|servername|1
+      @|ru\frostdelta\svrum\Core.java|307|315|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|ru\frostdelta\svrum\Core.java|316|320|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|ru\frostdelta\svrum\Core.java|321|327|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|ru\frostdelta\svrum\Core.java|345|349|core|method|ru.frostdelta.svrum.Core|core|(Ljava/lang/String;Ljava/lang/String;)V
+      @|ru\frostdelta\svrum\Core.java|350|356|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Core.java|367|373|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Core.java|395|401|System|class|java.lang.System
+      @|ru\frostdelta\svrum\Core.java|402|405|out|field|java.lang.System|out
+      @|ru\frostdelta\svrum\Core.java|406|413|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|ru\frostdelta\svrum\Core.java|440|450|DiscordRPC|class|club.minnced.discord.rpc.DiscordRPC
+      @|ru\frostdelta\svrum\Core.java|457|467|DiscordRPC|class|club.minnced.discord.rpc.DiscordRPC
+      @|ru\frostdelta\svrum\Core.java|468|476|INSTANCE|field|club.minnced.discord.rpc.DiscordRPC|INSTANCE
+      @|ru\frostdelta\svrum\Core.java|486|492|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Core.java|539|545|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Core.java|568|588|DiscordEventHandlers|class|club.minnced.discord.rpc.DiscordEventHandlers
+      @|ru\frostdelta\svrum\Core.java|604|624|DiscordEventHandlers|class|club.minnced.discord.rpc.DiscordEventHandlers
+      @|ru\frostdelta\svrum\Core.java|641|659|Discord_Initialize|method|club.minnced.discord.rpc.DiscordRPC|Discord_Initialize|(Ljava/lang/String;Lclub/minnced/discord/rpc/DiscordEventHandlers;ZLjava/lang/String;)V
+      @|ru\frostdelta\svrum\Core.java|709|728|DiscordRichPresence|class|club.minnced.discord.rpc.DiscordRichPresence
+      @|ru\frostdelta\svrum\Core.java|744|763|DiscordRichPresence|class|club.minnced.discord.rpc.DiscordRichPresence
+      @|ru\frostdelta\svrum\Core.java|784|798|startTimestamp|field|club.minnced.discord.rpc.DiscordRichPresence|startTimestamp
+      @|ru\frostdelta\svrum\Core.java|801|807|System|class|java.lang.System
+      @|ru\frostdelta\svrum\Core.java|808|825|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      @|ru\frostdelta\svrum\Core.java|853|860|details|field|club.minnced.discord.rpc.DiscordRichPresence|details
+      @|ru\frostdelta\svrum\Core.java|863|871|username|param|ru.frostdelta.svrum.Core|core|(Ljava/lang/String;Ljava/lang/String;)V|username|0
+      @|ru\frostdelta\svrum\Core.java|890|895|state|field|club.minnced.discord.rpc.DiscordRichPresence|state
+      @|ru\frostdelta\svrum\Core.java|914|924|servername|param|ru.frostdelta.svrum.Core|core|(Ljava/lang/String;Ljava/lang/String;)V|servername|1
+      @|ru\frostdelta\svrum\Core.java|943|956|largeImageKey|field|club.minnced.discord.rpc.DiscordRichPresence|largeImageKey
+      @|ru\frostdelta\svrum\Core.java|979|1001|Discord_UpdatePresence|method|club.minnced.discord.rpc.DiscordRPC|Discord_UpdatePresence|(Lclub/minnced/discord/rpc/DiscordRichPresence;)V
+      @|ru\frostdelta\svrum\Core.java|1025|1045|Discord_RunCallbacks|method|club.minnced.discord.rpc.DiscordRPC|Discord_RunCallbacks|()V
+      @|ru\frostdelta\svrum\Core.java|1061|1067|Thread|class|java.lang.Thread
+      @|ru\frostdelta\svrum\Core.java|1096|1102|Thread|class|java.lang.Thread
+      @|ru\frostdelta\svrum\Core.java|1103|1116|currentThread|method|java.lang.Thread|currentThread|()Ljava/lang/Thread;
+      @|ru\frostdelta\svrum\Core.java|1119|1132|isInterrupted|method|java.lang.Thread|isInterrupted|()Z
+      @|ru\frostdelta\svrum\Core.java|1158|1178|Discord_RunCallbacks|method|club.minnced.discord.rpc.DiscordRPC|Discord_RunCallbacks|()V
+      @|ru\frostdelta\svrum\Core.java|1224|1230|Thread|class|java.lang.Thread
+      @|ru\frostdelta\svrum\Core.java|1231|1236|sleep|method|java.lang.Thread|sleep|(J)V
+      @|ru\frostdelta\svrum\Core.java|1269|1289|InterruptedException|class|java.lang.InterruptedException
+      @|ru\frostdelta\svrum\Core.java|1334|1339|start|method|java.lang.Thread|start|()V
+   Method End: core(Ljava/lang/String;Ljava/lang/String;)V
+Class End  : ru.frostdelta.svrum.Core
+endProcessing "ru\frostdelta\svrum\Core.java"
+
+startProcessing "ru\frostdelta\svrum\Main.java" md5: 0652351d4b2637f63298354d623e78de
+@|ru\frostdelta\svrum\Main.java|8|27|ru.frostdelta.svrum|package|ru.frostdelta.svrum|(file)
+Class Start: ru.frostdelta.svrum.Main
+   @|ru\frostdelta\svrum\Main.java|463|466|Mod|class|net.minecraftforge.fml.common.Mod
+   @|ru\frostdelta\svrum\Main.java|467|472|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|ru\frostdelta\svrum\Main.java|482|498|canBeDeactivated|method|net.minecraftforge.fml.common.Mod|canBeDeactivated|()Z
+   @|ru\frostdelta\svrum\Main.java|521|525|Main|class|ru.frostdelta.svrum.Main
+   @|ru\frostdelta\svrum\Main.java|541|547|String|class|java.lang.String
+   @|ru\frostdelta\svrum\Main.java|541|547|String|class|java.lang.String
+   @|ru\frostdelta\svrum\Main.java|548|558|servername|field|ru.frostdelta.svrum.Main|servername|
+   @|ru\frostdelta\svrum\Main.java|596|611|FMLEventChannel|class|net.minecraftforge.fml.common.network.FMLEventChannel
+   @|ru\frostdelta\svrum\Main.java|596|611|FMLEventChannel|class|net.minecraftforge.fml.common.network.FMLEventChannel
+   @|ru\frostdelta\svrum\Main.java|612|619|channel|field|ru.frostdelta.svrum.Main|channel|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|ru\frostdelta\svrum\Main.java|694|699|event|param|ru.frostdelta.svrum.Main|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|ru\frostdelta\svrum\Main.java|627|643|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|ru\frostdelta\svrum\Main.java|660|667|preInit|method|ru.frostdelta.svrum.Main|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|ru\frostdelta\svrum\Main.java|668|693|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|ru\frostdelta\svrum\Main.java|712|725|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|ru\frostdelta\svrum\Main.java|739|752|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|ru\frostdelta\svrum\Main.java|753|758|event|param|ru.frostdelta.svrum.Main|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|ru\frostdelta\svrum\Main.java|759|788|getSuggestedConfigurationFile|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getSuggestedConfigurationFile|()Ljava/io/File;
+      @|ru\frostdelta\svrum\Main.java|808|812|load|method|net.minecraftforge.common.config.Configuration|load|()V
+      @|ru\frostdelta\svrum\Main.java|824|830|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Main.java|847|856|getString|method|net.minecraftforge.common.config.Configuration|getString|(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|ru\frostdelta\svrum\Main.java|878|894|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|ru\frostdelta\svrum\Main.java|896|906|servername|field|ru.frostdelta.svrum.Main|servername
+      @|ru\frostdelta\svrum\Main.java|938|942|save|method|net.minecraftforge.common.config.Configuration|save|()V
+      @|ru\frostdelta\svrum\Main.java|954|960|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Main.java|972|981|Minecraft|class|net.minecraft.client.Minecraft
+      @|ru\frostdelta\svrum\Main.java|982|994|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|ru\frostdelta\svrum\Main.java|997|1007|getSession|method|net.minecraft.client.Minecraft|getSession|()Lnet/minecraft/util/Session;
+      @|ru\frostdelta\svrum\Main.java|1010|1021|getUsername|method|net.minecraft.util.Session|getUsername|()Ljava/lang/String;
+      @|ru\frostdelta\svrum\Main.java|1033|1038|start|method|ru.frostdelta.svrum.Main|start|(Ljava/lang/String;Ljava/lang/String;)V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: start(Ljava/lang/String;Ljava/lang/String;)V
+      @|ru\frostdelta\svrum\Main.java|1125|1133|username|param|ru.frostdelta.svrum.Main|start|(Ljava/lang/String;Ljava/lang/String;)V|username|0
+      @|ru\frostdelta\svrum\Main.java|1142|1148|server|param|ru.frostdelta.svrum.Main|start|(Ljava/lang/String;Ljava/lang/String;)V|server|1
+      @|ru\frostdelta\svrum\Main.java|1073|1081|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|ru\frostdelta\svrum\Main.java|1082|1086|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|ru\frostdelta\svrum\Main.java|1087|1093|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|ru\frostdelta\svrum\Main.java|1112|1117|start|method|ru.frostdelta.svrum.Main|start|(Ljava/lang/String;Ljava/lang/String;)V
+      @|ru\frostdelta\svrum\Main.java|1118|1124|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Main.java|1135|1141|String|class|java.lang.String
+      @|ru\frostdelta\svrum\Main.java|1159|1163|Core|class|ru.frostdelta.svrum.Core
+      @|ru\frostdelta\svrum\Main.java|1175|1179|Core|class|ru.frostdelta.svrum.Core
+      @|ru\frostdelta\svrum\Main.java|1196|1200|core|method|ru.frostdelta.svrum.Core|core|(Ljava/lang/String;Ljava/lang/String;)V
+      @|ru\frostdelta\svrum\Main.java|1201|1209|username|param|ru.frostdelta.svrum.Main|start|(Ljava/lang/String;Ljava/lang/String;)V|username|0
+      @|ru\frostdelta\svrum\Main.java|1211|1217|server|param|ru.frostdelta.svrum.Main|start|(Ljava/lang/String;Ljava/lang/String;)V|server|1
+   Method End: start(Ljava/lang/String;Ljava/lang/String;)V
+   Method Start: loadComplete(Lnet/minecraftforge/fml/common/event/FMLLoadCompleteEvent;)V
+      @|ru\frostdelta\svrum\Main.java|1299|1304|event|param|ru.frostdelta.svrum.Main|loadComplete|(Lnet/minecraftforge/fml/common/event/FMLLoadCompleteEvent;)V|event|0
+      @|ru\frostdelta\svrum\Main.java|1232|1248|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|ru\frostdelta\svrum\Main.java|1265|1277|loadComplete|method|ru.frostdelta.svrum.Main|loadComplete|(Lnet/minecraftforge/fml/common/event/FMLLoadCompleteEvent;)V
+      @|ru\frostdelta\svrum\Main.java|1278|1298|FMLLoadCompleteEvent|class|net.minecraftforge.fml.common.event.FMLLoadCompleteEvent
+   Method End: loadComplete(Lnet/minecraftforge/fml/common/event/FMLLoadCompleteEvent;)V
+Class End  : ru.frostdelta.svrum.Main
+endProcessing "ru\frostdelta\svrum\Main.java"
+

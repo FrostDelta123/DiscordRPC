@@ -1,17 +1,15 @@
 package ru.frostdelta.svrum;
 
+import net.minecraft.client.Minecraft;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.FMLEventChannel;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
-        import cpw.mods.fml.common.Mod;
-        import cpw.mods.fml.common.Mod.EventHandler;
-        import cpw.mods.fml.common.event.FMLLoadCompleteEvent;
-        import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-        import cpw.mods.fml.common.network.FMLEventChannel;
-        import cpw.mods.fml.relauncher.Side;
-        import cpw.mods.fml.relauncher.SideOnly;
-        import net.minecraft.client.Minecraft;
-        import net.minecraftforge.common.config.Configuration;
-
-@Mod(modid = "RPC", dependencies = "after:Minecraft Forge", canBeDeactivated = false)
+@Mod(modid = "rpc", canBeDeactivated = true)
 
 public class Main {
 
@@ -20,29 +18,27 @@ public class Main {
 
     public static FMLEventChannel channel;
 
-    @EventHandler
+    @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
 
         Configuration config = new Configuration(event.getSuggestedConfigurationFile());
         config.load();
-
         String server = config.getString("Servername", config.CATEGORY_GENERAL, servername, "Servername");
-
         config.save();
-
         String username = Minecraft.getMinecraft().getSession().getUsername();
         start(username, server);
+
     }
 
 
 
     @SideOnly(Side.CLIENT)
     private void start(String username, String server){
-        core core = new core();
+        Core core = new Core();
         core.core(username, server);
     }
 
-    @EventHandler
+    @Mod.EventHandler
     public void loadComplete(FMLLoadCompleteEvent event) {
     }
 
