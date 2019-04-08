@@ -17,18 +17,13 @@ apply plugin: "net.minecraftforge.gradle.forge"
 version = modVersion
 group = modGroup
 archivesBaseName = modBaseName
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 minecraft {
     version = project.forgeVersion
     runDir = "run"
-
-    // the mappings can be changed at any time, and must be in the following format.
-    // snapshot_YYYYMMDD   snapshot are built nightly.
-    // stable_#            stables are built at the discretion of the MCP team.
-    // Use non-default mappings at your own risk. they may not always work.
-    // simply re-run your setup task after changing the mappings to update your workspace.
     mappings = project.mcpVersion
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
 repositories {
@@ -36,25 +31,33 @@ repositories {
     jcenter()
 }
 
+configurations {
+    embed
+    compile.extendsFrom(embed)
+}
+
 dependencies {
+    embed 'club.minnced:java-discord-rpc:2.0.0'
+
     compile 'club.minnced:java-discord-rpc:2.0.0'
 }
 
+jar {
+    from configurations.embed.collect { it.isDirectory() ? it : zipTree(it) }
+}
 processResources {
-    // this will ensure that this task is redone when the versions change.
+
     inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
 
-    // replace stuff in mcmod.info, nothing else
     from(sourceSets.main.resources.srcDirs) {
-        include "mcmod.info"
+        include 'mcmod.info'
 
-        // replace version and mcversion
-        expand "version": project.version, "mcversion": project.minecraft.version
+        expand 'version':project.version, 'mcversion':project.minecraft.version
     }
 
-    // copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
-        exclude "mcmod.info"
+        exclude 'mcmod.info'
     }
+
 }
