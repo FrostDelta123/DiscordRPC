@@ -1,19 +1,25 @@
 package ru.frostdelta.svrum;
 
-        import club.minnced.discord.rpc.DiscordEventHandlers;
-        import club.minnced.discord.rpc.DiscordRPC;
-        import club.minnced.discord.rpc.DiscordRichPresence;
-        import cpw.mods.fml.relauncher.Side;
-        import cpw.mods.fml.relauncher.SideOnly;
 
-public class core {
+import club.minnced.discord.rpc.DiscordEventHandlers;
+import club.minnced.discord.rpc.DiscordRPC;
+import club.minnced.discord.rpc.DiscordRichPresence;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+public class Core {
+
+	private String id;
+
+	public Core(String ID){
+		this.id = ID;
+	}
 
     @SideOnly(Side.CLIENT)
     public void core(String username, String servername){
 
-
         DiscordRPC lib = DiscordRPC.INSTANCE;
-        String applicationId = "";
+        String applicationId = id;
         String steamId = "";
         DiscordEventHandlers handlers = new DiscordEventHandlers();
 
